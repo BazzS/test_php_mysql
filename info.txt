@@ -1,0 +1,13 @@
+brew services restart nginx
+ mysql -u root -p
+
+ <?php
+ $link = mysqli_connect("localhost", "root", "Atlon111","scandiweb");
+
+ if ($link == false){
+     print("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error());
+ }
+ else {
+     print("Соединение установлено успешно");
+ }
+ ?>
